@@ -9,10 +9,10 @@ Ou abra o projeto na IDE de preferência para executar internamente.
 
 _________________________________________________________________________________
 # swagger
-http://ec2-18-188-230-183.us-east-2.compute.amazonaws.com:8080/swagger.html
+http://ec2-18-224-57-20.us-east-2.compute.amazonaws.com:8080/swagger.html
 
 # curl
-http://ec2-18-188-230-183.us-east-2.compute.amazonaws.com:8080/curl.html
+http://ec2-18-224-57-20.us-east-2.compute.amazonaws.com:8080/curl.html
 
 # aplicação publicada (front)
 http://ec2-3-148-224-95.us-east-2.compute.amazonaws.com/
