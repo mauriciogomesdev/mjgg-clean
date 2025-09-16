@@ -10,14 +10,16 @@ Calcula a previsão de consumo de combustível e gasto
 _________________________________________________________________________________
 ### Links
 
-[**> Swagger**](http://ec2-18-224-57-20.us-east-2.compute.amazonaws.com:8080/swagger.html)
+[**> Swagger**](http://ec2-18-189-170-202.us-east-2.compute.amazonaws.com:8080/swagger.html)
 
-[**> Curl**](http://ec2-18-224-57-20.us-east-2.compute.amazonaws.com:8080/curl.html)
+[**> Curl**](http://ec2-18-189-170-202.us-east-2.compute.amazonaws.com:8080/curl.html)
 
-[**> Acessar aplicação publicada (front)**](http://ec2-3-148-224-95.us-east-2.compute.amazonaws.com)
+[**> Acessar aplicação publicada (front)**](http://ec2-3-148-191-229.us-east-2.compute.amazonaws.com))
 
-**- Url da API publicada (vide swagger)** 
-http://ec2-18-224-57-20.us-east-2.compute.amazonaws.com:8080/veiculos/previsao
+<br>
 
-**- Url do banco publicado**
+**- Endpont da API publicada (vide swagger)**\
+ec2-18-189-170-202.us-east-2.compute.amazonaws.com:8080/veiculos/previsao
+
+**- Url do banco publicado**\
 jdbc:postgresql://ec2-3-137-217-127.us-east-2.compute.amazonaws.com:5432/postgres
