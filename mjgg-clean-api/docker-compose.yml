@@ -1,0 +1,28 @@
+services:
+#  postgres:
+#    image: postgres:15
+#    container_name: mjgg-postgres
+#    environment:
+#      POSTGRES_DB: postgres
+#      POSTGRES_USER: mjgguser
+#      POSTGRES_PASSWORD: mjggpass
+#    ports:
+#      - "5432:5432"
+#    volumes:
+#      - pgdata:/var/lib/postgresql/data
+#
+  app:
+    build: .
+    image: mjgg-clean-api-app
+    container_name: mjgg-clean-api-app
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://ec2-3-137-217-127.us-east-2.compute.amazonaws.com:5432/postgres
+      SPRING_DATASOURCE_USERNAME: mjgguser
+      SPRING_DATASOURCE_PASSWORD: mjggpass
+      SPRING_JPA_HIBERNATE_DIALECT: org.hibernate.dialect.PostgreSQLDialect
+    ports:
+      - "8080:8080"
+    command: ["java", "-jar", "app.jar"]
+
+#volumes:
+#  pgdata:
