@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Curl Exemplo - MJGG Clean API</title>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@4.18.3/swagger-ui.css" />
+    <style>
+        html { box-sizing: border-box; overflow: -moz-scrollbars-vertical; overflow-y: scroll; }
+        *, *:before, *:after { box-sizing: inherit; }
+        body { margin:0; background: #fafafa; }
+    </style>
+</head>
+<body>
+<div style="margin-left:2rem">
+    <h2><strong>Curl Exemplo - MJGG Clean API</strong></h2>
+</div>
+<p></p>
+<div style="margin-left:4rem">
+curl --location 'http://ec2-3-137-165-202.us-east-2.compute.amazonaws.com:8080/veiculos/previsao' <br>
+--header 'Content-Type: application/json' <br>
+--data '{ <br>
+"precoGasolina": 6.69, <br>
+"kmCidade": 100.0, <br>
+"kmRodovia": 100.0 <br>
+}'
+</div>
+<div style="margin-left:2rem">
+    '<br><br> (*) Para teste local usar a URL: http://localhost:8080/veiculos/previsao'
+</div>
+</body>
+</html>

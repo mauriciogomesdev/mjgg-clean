@@ -29,15 +29,15 @@ public class VeiculoService {
 
     public List<PrevisaoResponseDto> calcularPrevisao(PrevisaoRequestDto dto) {
         return veiculoRepository.findAll().stream().map(veiculo -> {
-            BigDecimal litrosCidade = dto.getKmCidade().subtract(veiculo.getConsumoCidade());
-            BigDecimal litrosRodovia = dto.getKmRodovia().subtract(veiculo.getConsumoRodovia());
+            BigDecimal litrosCidade = dto.getKmCidade().divide(veiculo.getConsumoCidade(),2,BigDecimal.ROUND_HALF_UP);
+            BigDecimal litrosRodovia = dto.getKmRodovia().divide(veiculo.getConsumoRodovia(),2,BigDecimal.ROUND_HALF_UP);
             BigDecimal totalLitros = litrosCidade.add(litrosRodovia);
             BigDecimal valorGasto = totalLitros.multiply(dto.getPrecoGasolina());
             return new PrevisaoResponseDto(
                     veiculo.getNome(),
                     veiculo.getMarca(),
                     veiculo.getModelo(),
-                    veiculo.getDataFabricacao(),
+                    String.valueOf(veiculo.getDataFabricacao().getYear()),
                     totalLitros,
                     valorGasto,
                     null
