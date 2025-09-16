@@ -2,14 +2,12 @@
 Calcula a previsão de consumo de combustível e gasto
 ##############
 
-- Para testar a api localmente faça um clone do repositório:
+- Para testar a api localmente faça um clone do repositório: https://github.com/mauriciogomesdev/mjgg-clean.git
+- No diretório do projeto clonado rode com Maven: mvn spring-boot:run
 
-https://github.com/mauriciogomesdev/mjgg-clean.git
+Ou abra o projeto na IDE de preferência para executar internamente.
 
-
-
-
-
+_________________________________________________________________________________
 # swagger
 http://ec2-18-188-230-183.us-east-2.compute.amazonaws.com:8080/swagger.html
 
