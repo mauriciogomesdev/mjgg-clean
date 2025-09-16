@@ -3,6 +3,6 @@ Calcula a previsão de consumo de combustível e gasto
 
 # swagger
 
-/mjgg-clean-api/swagger.html[mjgg-cluster-api/swagger.html]
+/mjgg-clean-api/swagger.html
 
 
