@@ -1,24 +1,23 @@
 # mjgg-clean
 Calcula a previsão de consumo de combustível e gasto
-##############
 
 - Para testar a api localmente faça um clone do repositório: https://github.com/mauriciogomesdev/mjgg-clean.git
-- No diretório do projeto clonado rode com Maven: mvn spring-boot:run
+- No diretório do projeto clonado rode com Maven: mvn spring-boot:run (necessário jdk20)
+- Abra o postman ou outro utilitário e importe o comando curl informado abaixo para testar requisição
 
-Ou abra o projeto na IDE de preferência para executar internamente.
+(*) Ou abra o projeto na IDE de preferência para executar internamente.
 
 _________________________________________________________________________________
-# swagger
-http://ec2-18-224-57-20.us-east-2.compute.amazonaws.com:8080/swagger.html
+### Links
 
-# curl
-http://ec2-18-224-57-20.us-east-2.compute.amazonaws.com:8080/curl.html
+[**> Swagger**](http://ec2-18-224-57-20.us-east-2.compute.amazonaws.com:8080/swagger.html)
 
-# aplicação publicada (front)
-http://ec2-3-148-224-95.us-east-2.compute.amazonaws.com/
+[**> Curl**](http://ec2-18-224-57-20.us-east-2.compute.amazonaws.com:8080/curl.html)
 
-# aplicação publicada (back, vide swagger)
+[**> Acessar aplicação publicada (front)**](http://ec2-3-148-224-95.us-east-2.compute.amazonaws.com)
+
+**- Url da API publicada (vide swagger)** 
 http://ec2-18-224-57-20.us-east-2.compute.amazonaws.com:8080/veiculos/previsao
 
-# banco publicado
+**- Url do banco publicado**
 jdbc:postgresql://ec2-3-137-217-127.us-east-2.compute.amazonaws.com:5432/postgres
