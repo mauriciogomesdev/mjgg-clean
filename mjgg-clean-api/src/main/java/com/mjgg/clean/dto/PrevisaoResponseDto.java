@@ -12,17 +12,17 @@ public record PrevisaoResponseDto (
     String marca,
     String modelo,
     String ano,
-    BigDecimal litrosGastos,
+    BigDecimal litrosGasto,
     BigDecimal valorGasto,
     String mensagem
 ){
     public PrevisaoResponseDto(String nome, String marca, String modelo,
-                               String ano, BigDecimal litrosGastos, BigDecimal valorGasto, String mensagem) {
+                               String ano, BigDecimal litrosGasto, BigDecimal valorGasto, String mensagem) {
         this.nome = nome;
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
-        this.litrosGastos = litrosGastos;
+        this.litrosGasto = litrosGasto;
         this.valorGasto = valorGasto;
         this.mensagem = mensagem;
     }
