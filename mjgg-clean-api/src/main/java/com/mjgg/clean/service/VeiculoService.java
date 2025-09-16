@@ -19,10 +19,6 @@ public class VeiculoService {
     @Autowired
     private VeiculoRepository veiculoRepository;
 
-    public Veiculo salvar(Veiculo v) {
-        return veiculoRepository.save(v);
-    }
-
     public List<Veiculo> listar() {
         return veiculoRepository.findAll();
     }
