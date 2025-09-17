@@ -14,7 +14,7 @@ ________________________________________________________________________________
 
 [**> Curl**](http://ec2-18-189-170-202.us-east-2.compute.amazonaws.com:8080/curl.html)
 
-[**> Acessar aplicação publicada (front)**](http://ec2-52-14-180-214.us-east-2.compute.amazonaws.com)
+[**> Acessar aplicação publicada (front)**](http://mjgg-clean.developer.tec.br)
 
 <br>
 
